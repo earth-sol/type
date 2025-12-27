@@ -3,6 +3,8 @@ import '@styles/action-menu.sass'
 import Actions from '@components/menu/Actions.astro'
 import Shortcuts from '@components/menu/views/Shortcuts.astro'
 import MdHandbook from '@components/menu/views/MdHandbook.astro'
+
+import { state } from '@scripts/state'
 ---
 
 <div id="action-menu">
@@ -10,7 +12,7 @@ import MdHandbook from '@components/menu/views/MdHandbook.astro'
 		><div class="left">
 			<span>Menu</span>
 			<samp
-				><kbd>⌘</kbd>
+				><kbd class="ctrl-key">{state.ctrlKey}</kbd>
 				<kbd>K</kbd></samp
 			>
 		</div>
@@ -24,6 +26,7 @@ import MdHandbook from '@components/menu/views/MdHandbook.astro'
 <script>
 	import { Menu } from '@scripts/menu/classes/Menu'
 	import { state } from '@scripts/state'
+
 	state.menu = new Menu()
 </script>
 <style></style>

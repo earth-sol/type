@@ -8,10 +8,8 @@ import { unlock } from '@scripts/editor/lock'
 import { Action } from '@scripts/menu/classes/Action'
 import { save } from '@scripts/note/save'
 import { state } from '@scripts/state'
-import { isMac } from '@scripts/utils/isMac'
 
-// MDN says it's okay
-const ctrl = isMac() ? '⌘' : 'Ctrl'
+const ctrl = state.ctrlKey
 const shift = 'Shift'
 
 export const fuzzySortOptions = {
