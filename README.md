@@ -46,13 +46,13 @@ You can use install type as PWA or use [nativefier](https://github.com/nativefi
 
 1. Install [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (cause you need npm)
 2. Download repository
-3. Navigate to project and run this in terminal
+3. Open terminal and run this
 ```bash
-cd <path to type>
+cd <path to folder of type>
 npm i
 npm run dev
 ```
-4. Open link from terminal (prob http://localhost:4321/)
+4. Open link from terminal (usually http://localhost:4321/)
 
 ---
 
